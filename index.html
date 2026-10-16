@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Noor-e-Qalam — Islamic literature, Urdu poetry, novels, quotes and writers.">
+<title>Noor-e-Qalam | Alfaaz • Adab • Imaan</title>
+<style>
+:root{--green:#071d1a;--green2:#103a32;--gold:#e8c477;--cream:#fbf7ef;--ink:#17231f;--muted:#6d716b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.topbar{position:absolute;z-index:2;top:0;left:0;width:100%;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:20px 5%;color:white;background:linear-gradient(#061412b8,transparent)}
+.brand{display:flex;align-items:center;gap:12px;min-width:210px}.feather{font-size:38px;color:var(--gold)}.brand strong{font-size:26px;font-weight:500;display:block}.brand small{color:var(--gold);letter-spacing:2px}
+nav{display:flex;gap:24px;align-items:center;flex-wrap:wrap}nav a{font-size:15px;color:#fff}nav a:hover{color:var(--gold)}
+.nav-actions{display:flex;align-items:center;gap:12px}.gold-btn{border:0;border-radius:24px;background:var(--gold);padding:12px 21px;color:#20190e;font-weight:bold}.icon-btn{background:transparent;border:1px solid #ffffff66;border-radius:50%;color:white;width:40px;height:40px}
+.hero{min-height:610px;padding:150px 20px 54px;color:white;text-align:center;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(90deg,#061412aa,#06141244 48%,#06141265),linear-gradient(0deg,#061412b5,transparent 55%),url("assets/hero-bg.png") center 43%/cover no-repeat,var(--green)}
+.hero-inner{max-width:780px}.hero-kicker{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(48px,8vw,82px);font-weight:400;line-height:1.1;margin:12px 0;color:#fff4d6}.hero .urdu{font-family:"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;font-size:clamp(30px,5vw,48px);direction:rtl;margin:0 0 8px;color:var(--gold)}.hero p{line-height:1.8;font-size:18px;margin:8px auto;max-width:650px}.searchbar{display:flex;max-width:590px;margin:26px auto 30px;background:white;padding:6px;border-radius:32px;gap:6px}.searchbar input{min-width:0;flex:1;border:0;outline:0;padding:12px 16px;border-radius:25px;color:#222}.searchbar button{border-radius:25px;padding:12px 24px}
+.quicklinks{display:grid;grid-template-columns:repeat(4,1fr);max-width:780px;margin:22px auto 0}.quicklinks a{padding:12px 8px;border-right:1px solid #ffffff35}.quicklinks a:last-child{border:0}.quicklinks b{display:block;color:var(--gold);font-size:25px;font-weight:400}.quicklinks span{display:block;font-size:14px;margin-top:5px}
+main{max-width:1220px;margin:auto;padding:46px 24px}.eyebrow{text-align:center;color:#8b6a2c;letter-spacing:2px;text-transform:uppercase;font-size:12px}.section-title{text-align:center;font-size:36px;font-weight:400;margin:10px 0}.section-sub{text-align:center;color:var(--muted);margin:0 auto 28px;line-height:1.7}
+.category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.category{height:170px;border-radius:8px;overflow:hidden;position:relative;background:linear-gradient(0deg,#061412e8,transparent 80%),linear-gradient(135deg,#35574a,#a27c42);display:flex;align-items:end;color:white;padding:18px;transition:transform .2s}.category:hover{transform:translateY(-4px)}.category:nth-child(2){background:linear-gradient(0deg,#061412e8,transparent 80%),linear-gradient(135deg,#161b18,#80613c)}.category:nth-child(3){background:linear-gradient(0deg,#061412e8,transparent 80%),linear-gradient(135deg,#6b4d2f,#d5b16e)}.category:nth-child(4){background:linear-gradient(0deg,#061412e8,transparent 80%),linear-gradient(135deg,#314a40,#a7a080)}.category:nth-child(5){background:linear-gradient(0deg,#061412e8,transparent 80%),linear-gradient(135deg,#152a26,#8b714d)}.category h3{font-weight:400;font-size:21px;margin:0 0 5px}.category p{font:12px Arial,sans-serif;margin:0;color:#eee}.category .arrow{position:absolute;right:15px;bottom:15px;border:1px solid var(--gold);border-radius:50%;width:24px;height:24px;text-align:center;line-height:22px;color:var(--gold)}
+.content-section{padding-top:52px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.book-card{background:white;border:1px solid #e9dfce;border-radius:12px;padding:22px;box-shadow:0 8px 24px #1b302008}.tag{font:11px Arial,sans-serif;letter-spacing:1px;color:#94702f;text-transform:uppercase}.book-card h3{font-size:22px;font-weight:400;color:var(--green2);margin:10px 0}.book-card p{line-height:1.8;color:#555}.writer-strip{margin-top:44px;padding:28px;border-radius:12px;background:linear-gradient(110deg,#061a17,#143b32);color:white;display:grid;grid-template-columns:1.1fr repeat(3,1fr);gap:18px;align-items:center}.writer-strip h2{font-weight:400;color:var(--gold);font-size:27px}.writer{border-left:1px solid #ffffff2b;padding-left:18px}.writer strong{display:block;color:#f2dca9;font-weight:400;font-size:18px}.writer small{display:block;color:#d6d8d3;line-height:1.6;margin-top:6px}
+.panel{background:white;border:1px solid #e9dfce;border-radius:12px;padding:24px;max-width:680px;margin:32px auto}.panel h2{text-align:center;color:var(--green2);font-weight:400}.form-grid{display:grid;gap:12px}.form-grid input,.form-grid textarea,.form-grid select{width:100%;padding:13px;border:1px solid #ded5c4;border-radius:8px;background:#fff}.form-grid textarea{min-height:120px;resize:vertical}.form-actions{display:flex;gap:10px;flex-wrap:wrap}.status{font:14px Arial,sans-serif;line-height:1.6;color:#275b43}.small-note{font:13px Arial,sans-serif;color:#777;line-height:1.6}.hidden{display:none!important}.admin-list{display:grid;gap:10px}.admin-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #eee;padding:10px 0}.danger{background:#f5e0dc;color:#842d24;border:0;padding:8px 12px;border-radius:8px}
+footer{background:#061714;color:#eee;padding:30px 20px;text-align:center;line-height:1.9}footer strong{font-size:23px;font-weight:400;color:var(--gold)}footer small{color:#b8c1ba}
+@media(max-width:900px){.topbar{position:relative;background:var(--green);flex-wrap:wrap;justify-content:center;padding:16px}.brand{justify-content:center}.nav-actions{justify-content:center}nav{justify-content:center;gap:14px}.hero{padding-top:55px;min-height:560px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.category:last-child{grid-column:span 2}.writer-strip{grid-template-columns:1fr 1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.topbar{gap:14px}.brand strong{font-size:22px}nav{gap:11px}nav a{font-size:13px}.nav-actions{width:100%}.hero{padding:44px 16px;min-height:540px}.hero p{font-size:16px}.quicklinks{grid-template-columns:repeat(2,1fr)}.quicklinks a:nth-child(2){border-right:0}.quicklinks a{border-bottom:1px solid #ffffff35}.category-grid,.cards,.writer-strip{grid-template-columns:1fr}.category,.category:last-child{grid-column:auto}.category{height:150px}.writer{border-left:0;border-top:1px solid #ffffff2b;padding:14px 0 0}main{padding:36px 16px}.section-title{font-size:30px}.searchbar input{padding:10px}.searchbar button{padding:10px 15px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="feather">✒</span><span><strong>Noor-e-Qalam</strong><small>Alfaaz • Adab • Imaan</small></span></a>
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#collections">Library</a><a href="#novels">Novels</a><a href="#poetry">Poetry</a><a href="#writers">Writers</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions"><button class="icon-btn" aria-label="Focus search" onclick="document.querySelector('#search').focus()">⌕</button><button class="gold-btn" onclick="document.querySelector('#account').scrollIntoView({behavior:'smooth'})">Login / Signup</button></div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-kicker">A home for words and wonder</div>
+    <div class="urdu">نورِ قلم</div>
+    <h1>Noor-e-Qalam</h1>
+    <p>Where words touch the heart, and faith lights the soul.</p>
+    <p>Adab, imaan aur mohabbat se bharpoor alfaaz ki duniya.</p>
+    <form class="searchbar" id="searchForm"><input id="search" type="search" placeholder="Search poetry, novels, quotes, or writers..." aria-label="Search library"><button class="gold-btn">Search</button></form>
+    <div class="quicklinks">
+      <a href="#islamic"><b>♧</b><span>Islamic Literature</span></a>
+      <a href="#poetry"><b>✒</b><span>Poetry</span></a>
+      <a href="#novels"><b>▤</b><span>Novels</span></a>
+      <a href="#writers"><b>♙</b><span>Writers</span></a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="collections">
+    <div class="eyebrow">Explore categories</div><h2 class="section-title">Our Collections</h2>
+    <p class="section-sub">Different genres, one purpose — to touch your heart.</p>
+    <div class="category-grid">
+      <a class="category" href="#islamic"><div><h3>Islamic Literature</h3><p>Quran, Hadith, reflection</p></div><span class="arrow">↗</span></a>
+      <a class="category" href="#poetry"><div><h3>Poetry</h3><p>Nazmein, ghazals, shayari</p></div><span class="arrow">↗</span></a>
+      <a class="category" href="#novels"><div><h3>Novels</h3><p>Love, social, historical</p></div><span class="arrow">↗</span></a>
+      <a class="category" href="#quotes"><div><h3>Quotes</h3><p>Motivational, Islamic, life</p></div><span class="arrow">↗</span></a>
+      <a class="category" href="#writers"><div><h3>Writers</h3><p>Famous and emerging</p></div><span class="arrow">↗</span></a>
+    </div>
+  </section>
+
+  <section class="content-section" id="islamic">
+    <div class="eyebrow">Words for the soul</div><h2 class="section-title">Islamic Literature</h2>
+    <p class="section-sub">Reflections on faith, patience, gratitude and kindness.</p>
+    <div class="cards" id="islamicCards"></div>
+  </section>
+
+  <section class="content-section" id="poetry">
+    <div class="eyebrow">Feel every line</div><h2 class="section-title">Poetry & Heartfelt Words</h2>
+    <p class="section-sub">Original sample writing for your first website prototype.</p>
+    <div class="cards" id="poetryCards"></div>
+  </section>
+
+  <section class="content-section" id="novels">
+    <div class="eyebrow">Stories that stay with us</div><h2 class="section-title">Novel Corner</h2>
+    <p class="section-sub">Discover themes, book notes and reading recommendations.</p>
+    <div class="cards" id="novelCards"></div>
+  </section>
+
+  <section class="content-section" id="quotes">
+    <div class="eyebrow">Little reminders</div><h2 class="section-title">Quotes to Keep</h2>
+    <div class="cards" id="quoteCards"></div>
+  </section>
+
+  <section class="writer-strip" id="writers">
+    <div><div class="eyebrow" style="text-align:left;color:#e8c477">The voices that inspire</div><h2>Featured Writers</h2><p>Meet the minds behind timeless ideas.</p></div>
+    <div class="writer"><strong>Maulana Rumi</strong><small>Love, spirituality and the beauty of life.</small></div>
+    <div class="writer"><strong>Allama Iqbal</strong><small>A poet of vision, hope and self-discovery.</small></div>
+    <div class="writer"><strong>Fazal-e-Haq Khairabadi</strong><small>A scholar remembered for his learning and legacy.</small></div>
+  </section>
+
+  <section class="panel" id="account">
+    <div class="eyebrow">Your reading space</div><h2>Login / Signup</h2>
+    <p class="small-note">This starter uses a demo account only. It does not create real accounts or securely store passwords. Connect Firebase Authentication before inviting real users.</p>
+    <form class="form-grid" id="accountForm"><input id="email" type="email" placeholder="Email address" required><input id="password" type="password" minlength="6" placeholder="Password (demo only)" required><div class="form-actions"><button class="gold-btn" type="button" id="signup">Create demo account</button><button class="gold-btn" type="submit">Demo login</button><button type="button" class="danger" id="logout">Logout</button></div></form><p class="status" id="accountStatus" role="status"></p>
+  </section>
+
+  <section class="panel" id="admin">
+    <div class="eyebrow">Manage your collection</div><h2>Admin Dashboard — Demo</h2>
+    <p class="small-note">Demo access code is visible in the source code. This is NOT secure admin authentication. Never publish sensitive content or use this as a real admin system.</p>
+    <button class="gold-btn" id="adminToggle">Open demo admin</button>
+    <div id="adminArea" class="hidden">
+      <form class="form-grid" id="postForm"><input id="postTitle" placeholder="Title" required><input id="postAuthor" placeholder="Writer / author" required><select id="postCategory"><option>Islamic Literature</option><option>Poetry</option><option>Novels</option><option>Quotes</option></select><textarea id="postText" placeholder="Write an original summary or your own text" required></textarea><button class="gold-btn">Add to library</button></form>
+      <div class="admin-list" id="adminList"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="contact">
+    <div class="eyebrow">We would love to hear from you</div><h2>Contact Noor-e-Qalam</h2>
+    <form class="form-grid" id="contactForm"><input id="contactName" placeholder="Your name" required><input id="contactEmail" type="email" placeholder="Your email" required><textarea id="contactMessage" placeholder="Your message" required></textarea><button class="gold-btn">Submit message</button></form>
+    <p class="status" id="contactStatus" role="status"></p><p class="small-note">Prototype note: this saves a message in this browser only. Connect a secure backend before collecting real messages.</p>
+  </section>
+</main>
+<footer><strong>☾ Noor-e-Qalam</strong><div>Alfaaz • Adab • Imaan</div><small>Made with love for readers and writers · © <span id="year"></span></small></footer>
+
+<script>
+const KEY="noor-qalam-posts-v1";
+const seed=[
+ {id:1,category:"Islamic Literature",title:"Sabr aur Umeed",author:"Noor-e-Qalam",text:"Mushkil waqt mein sabr, dua aur nek amal insaan ko hausla dete hain. Yeh ek original reflection hai; religious rulings ke liye authentic sources se rujoo karein."},
+ {id:2,category:"Islamic Literature",title:"Shukr ki Roshni",author:"Noor-e-Qalam",text:"Rozmarrah ki chhoti nematon ko pehchanna dil mein shukr aur narmi paida kar sakta hai."},
+ {id:3,category:"Poetry",title:"Khamosh Dua",author:"Original sample",text:"Kabhi khamoshi bhi dil ki zubaan ban jaati hai, aur umeed ki ek kiran andheron mein jagmagaati hai."},
+ {id:4,category:"Poetry",title:"Dil ke Alfaaz",author:"Original sample",text:"Jo baat labon tak aa na saki, woh lafzon mein dhal kar diary ke safhon par reh gayi."},
+ {id:5,category:"Novels",title:"Ishq, Imaan aur Safar",author:"Reading theme",text:"Theme: ek kirdar ka emotional safar, apni ghaltiyon se seekhna, aur izzat aur imaan ke saath zindagi ke faislay karna."},
+ {id:6,category:"Novels",title:"Adhoori Dastaan",author:"Reading theme",text:"Theme: family, friendship, heartbreak and healing. Add your own review or a short, original summary here."},
+ {id:7,category:"Quotes",title:"Umeed",author:"Noor-e-Qalam",text:"Har naya din seekhne, sudharne aur behtar qadam uthane ka ek aur mauqa hai."},
+ {id:8,category:"Quotes",title:"Narmi",author:"Noor-e-Qalam",text:"Narmi se kahi hui sachchi baat, sakhti se kahi hui baat se zyada asar kar sakti hai."}
+];
+let posts=readPosts();
+function readPosts(){try{return JSON.parse(localStorage.getItem(KEY))||seed}catch{return seed}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(posts))}catch{alert("Browser storage unavailable. Changes may not persist.")}}
+function el(tag,cls,txt){const n=document.createElement(tag);if(cls)n.className=cls;n.textContent=txt;return n}
+function card(post){const a=el("article","book-card","");a.append(el("div","tag",post.category));a.append(el("h3","",post.title));a.append(el("div","small-note","By "+post.author));a.append(el("p","",post.text));return a}
+function render(){
+ const q=document.querySelector("#search").value.trim().toLowerCase();
+ const groups={"Islamic Literature":"islamicCards","Poetry":"poetryCards","Novels":"novelCards","Quotes":"quoteCards"};
+ Object.entries(groups).forEach(([cat,id])=>{const box=document.getElementById(id);box.replaceChildren();const matches=posts.filter(p=>p.category===cat&&[p.title,p.author,p.text,p.category].some(s=>s.toLowerCase().includes(q)));matches.forEach(p=>box.append(card(p)));if(!matches.length)box.append(el("p","small-note","No matching entries found."))});
+ const list=document.querySelector("#adminList");list.replaceChildren();posts.forEach(p=>{const row=el("div","admin-row",p.title+" — "+p.category);const b=el("button","danger","Delete");b.type="button";b.onclick=()=>{posts=posts.filter(x=>x.id!==p.id);save();render()};row.append(b);list.append(row)});
+}
+document.querySelector("#searchForm").addEventListener("submit",e=>{e.preventDefault();render();document.querySelector("#collections").scrollIntoView({behavior:"smooth"})});
+document.querySelector("#search").addEventListener("input",render);
+function demoAuth(mode){const email=document.querySelector("#email").value.trim();const password=document.querySelector("#password").value;if(!email||password.length<6){document.querySelector("#accountStatus").textContent="Enter a valid email and at least 6 characters for this demo.";return}localStorage.setItem("noor-demo-email",email);document.querySelector("#accountStatus").textContent=(mode==="signup"?"Demo account created for ":"Demo login shown for ")+email+". This is not real authentication."}
+document.querySelector("#signup").onclick=()=>demoAuth("signup");
+document.querySelector("#accountForm").addEventListener("submit",e=>{e.preventDefault();demoAuth("login")});
+document.querySelector("#logout").onclick=()=>{localStorage.removeItem("noor-demo-email");document.querySelector("#accountStatus").textContent="Demo session ended."};
+document.querySelector("#adminToggle").onclick=()=>{const pass=prompt("Demo code: QalamDemo123");if(pass==="QalamDemo123")document.querySelector("#adminArea").classList.toggle("hidden");else alert("Incorrect demo code.")};
+document.querySelector("#postForm").addEventListener("submit",e=>{e.preventDefault();posts.unshift({id:Date.now(),title:document.querySelector("#postTitle").value.trim(),author:document.querySelector("#postAuthor").value.trim(),category:document.querySelector("#postCategory").value,text:document.querySelector("#postText").value.trim()});save();e.target.reset();render()});
+document.querySelector("#contactForm").addEventListener("submit",e=>{e.preventDefault();const msg={name:document.querySelector("#contactName").value.trim(),email:document.querySelector("#contactEmail").value.trim(),message:document.querySelector("#contactMessage").value.trim(),date:new Date().toISOString()};try{const all=JSON.parse(localStorage.getItem("noor-demo-messages")||"[]");all.push(msg);localStorage.setItem("noor-demo-messages",JSON.stringify(all));document.querySelector("#contactStatus").textContent="Demo message saved in this browser only; it has not been emailed.";e.target.reset()}catch{document.querySelector("#contactStatus").textContent="Could not save the demo message."}});
+document.querySelector("#year").textContent=new Date().getFullYear();render();
+</script>
+</body>
+</html>
